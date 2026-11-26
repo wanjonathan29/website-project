@@ -1,5 +1,10 @@
-fetch("/api/messages", {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ name: "Sam", text: "Hello!" })
-}).then(r => r.json()).then(console.log);
+fetch("/api/projects")
+  .then(res => res.json())
+  .then(projects => {
+    const list = document.getElementById("projects");
+    projects.forEach(p => {
+      const li = document.createElement("li");
+      li.textContent = `${p.title}: ${p.description}`;
+      list.appendChild(li);
+    });
+  });
