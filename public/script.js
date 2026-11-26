@@ -1,4 +1,4 @@
-fetch("/api/projects")
+/* fetch("/api/projects")
   .then(res => res.json())
   .then(projects => {
     const list = document.getElementById("projects");
@@ -8,3 +8,4 @@ fetch("/api/projects")
       list.appendChild(li);
     });
   });
+*/
