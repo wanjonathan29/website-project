@@ -15,7 +15,7 @@ const messages = [];
 app.get("/api/projects", (req, res) => {
   res.json([
     { title: "Jonathan Wan Personal Website", description: "Built with Node and Express" },
-    { title: "Project Two", description: "Something I made" }
+    { title: "Project Two", description: "Something I made"}
   ]);
 });
 
